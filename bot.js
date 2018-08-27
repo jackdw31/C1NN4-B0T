@@ -42,20 +42,23 @@ client.on("message", message => {
 
 var lenormand = [":horse_racing: I - Rider",":four_leaf_clover: II - Clover",":ship: III - Ship",":house: IV - House",":evergreen_tree: V - Tree",":cloud: VI - Clouds",":snake: VII - Snake",":coffin: VIII - Coffin",":bouquet: IX - Bouquet","<:scythe:483403214222524427> X - Scythe","<:whip:483404933908004885> XI - Whip",":bird: XII - Birds",":baby::skin-tone-3: XIII - Child",":fox: XIV - Fox",":bear: XV - Bear",":sparkles: XVI - Stars","<:stork:483411715740925964> XVII - Stork",":dog: XVIII - Dog","<:tower:483415061088436234> XIX - Tower","<:garden:483417653071839252> XX - Garden",":mountain_snow: XXI - Mountain","<:crossroads:483419652651876363> XXII - Crossroad",":mouse: XXIII - Mice",":heart: XXIV - Heart",":ring: XXV - Ring",":book: XXVI - Book",":envelope: XXVII - Letter",":man::skin-tone-3: XXVIII - Man",":woman::skin-tone-3: XXIX - Woman",":cherry_blossom: XXX - Lily",":sun_with_face: XXXI - Sun",":full_moon_with_face: XXXII - Moon",":key: XXXIII - Key",":fish: XXXIV - Fish",":anchor: XXXV - Anchor",":cross: XXXVI - Cross"];
 
+function shuffle(array) {
+	var currentIndex = array.length, temporaryValue, randomIndex;
+	while (0 !== currentIndex) {
+		randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex -= 1;
+		temporaryValue = array[currentIndex];
+		array[currentIndex] = array[randomIndex];
+		array[randomIndex] = temporaryValue;
+	}
+};
+
 client.on("message", message => {
 	if (message.content === PREFIX + "lenormand") {
-		var shuffler = new Array(36); 
-		for (var i = 0; i < shuffler.length; i++) {
-			function shuffle(shuffler) {
-				for (let i = shuffler.length - 1; i > 0; i--) {
-					const j = Math.floor(Math.random() * (i + 1));
-					[shuffler[i], shuffler[j]] = [shuffler[j], shuffler[i]];
-				}
-			}
-		}	
-		let card01 = shuffler[0];
-		let card02 = shuffler[1];
-		let card03 = shuffler[2];
+		shuffle(lenormand);
+		let card01 = lenormand[0];
+		let card02 = lenormand[1];
+		let card03 = lenormand[2];
 		var embed = new Discord.RichEmbed()
 		.setTitle("**Reading**")
 			.addField(card01)
