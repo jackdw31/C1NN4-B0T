@@ -7,17 +7,6 @@ client.on("ready", () => {
 	console.log("I am ready!");
 });
 
-// rich presence /////////////////////////////
-
-static void UpdatePresence() {
-	DiscordRichPresence discordPresence;
-	memset(&discordPresence, 0, sizeof(discordPresence));
-	discordPresence.state = "c.help";
-	discordPresence.largeImageKey = "logo_png";
-	discordPresence.largeImageText = "The Novelcraft Lounge";
-	Discord_UpdatePresence(&discordPresence);
-};
-
 // help //////////////////////////////////////
 
 client.on("message", message => {
