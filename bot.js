@@ -60,12 +60,16 @@ client.on("message", message => {
 		let card02 = lenormand[1];
 		let card03 = lenormand[2];
 		var embed = new Discord.RichEmbed()
-		.setTitle("**Reading**")
-			.addField(card01)
-			.addField(card02)
-			.addField(card03)
+			.setDescription(card01)
 			.setColor(0xFBA635)
-			.setFooter("- The Novelcraft Lounge -")
+		message.channel.sendEmbed(embed);
+		var embed = new Discord.RichEmbed()
+			.setDescription(card02)
+			.setColor(0xFBA635)
+		message.channel.sendEmbed(embed);
+		var embed = new Discord.RichEmbed()
+			.setDescription(card03)
+			.setColor(0xFBA635)
 		message.channel.sendEmbed(embed);
 	}
 });
