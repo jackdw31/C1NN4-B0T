@@ -371,7 +371,7 @@ client.on("message", message => {
 			.addField("Reality", "Cards four, five, and six - the middle row - are indicative of the day to day circumstances.", true)
 			.addField("Unconscious", "Cards seven, eight, and nine - the bottom row - are indicative of the undercurrent shaping the situation.", true)
 			.setColor(0xFBA635)
-		message.channel.sendEmbed(embed);
+		message.author.sendEmbed(embed);
 	}
 });
 
