@@ -124,7 +124,7 @@ client.on("message", message => {
 	message.author.sendEmbed(embed);
 	var embed = new Discord.RichEmbed()
 		.setColor(0xFBA635)
-		.setDescription("For example, we draw the pair 'Coffin' and 'Child'. The child is the subject, and the coffin is the modifier.")
+		.setDescription("For example, we draw the pair 'Child' and 'Coffin'. The child is the subject, and the coffin is the modifier.")
 	message.author.sendEmbed(embed);
 	var embed = new Discord.RichEmbed()
 		.setColor(0xFBA635)
