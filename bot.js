@@ -68,101 +68,22 @@ client.on("message", message => {
 		.setColor(0xFBA635)
 		.setTitle("**Lenormand Basics**")
 	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("While Tarot deals with the psychological landscape of the self, the Lenormand deals with much more practical events in one's life. You can say that where tarot is the 'why', the Lenormand is the 'how'.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("Tarot gives us a greater understanding of the emotional states present in our lives, but leaves it open to how it can manifest. Combining the two systems together can often lead to extremely in-depth readings.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("One of the differences you'll notice first off is that Lenormand does not have reversed cards. All the cards are meant to have both positive and negative traits. Lenormand cards also do not have suits.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("In addition, Lenormand cards are not meant to be read on their own. THe most basic unit for a lenormand reading is a pair. This gives us a healthy range of interpretations across all 36 of the cards.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("You'll also notice as you go deeper into the Lenormand, that the readings are much more structural. There are few spreads because the nature of the Lenormand is to be read almost like a sentence.")
-	message.author.sendEmbed(embed);
-	
+	message.author.send("While Tarot deals with the psychological landscape of the self, the Lenormand deals with much more practical events in one's life. You can say that where tarot is the 'why', the Lenormand is the 'how'.\nl\nlTarot gives us a greater understanding of the emotional states present in our lives, but leaves it open to how it can manifest. Combining the two systems together can often lead to extremely in-depth readings.\nl\nlOne of the differences you'll notice first off is that Lenormand does not have reversed cards. All the cards are meant to have both positive and negative traits. Lenormand cards also do not have suits.\nl\nlIn addition, Lenormand cards are not meant to be read on their own. THe most basic unit for a lenormand reading is a pair. This gives us a healthy range of interpretations across all 36 of the cards.\nl\nlYou'll also notice as you go deeper into the Lenormand, that the readings are much more structural. There are few spreads because the nature of the Lenormand is to be read almost like a sentence.");
 	var embed = new Discord.RichEmbed()
 		.setColor(0xFBA635)
 		.setTitle("**History of Lenormand**")
 	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("Like Tarot, Lenormand started out as a parlor game called 'The Game of Hope', originating in the 1800's.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("The cards are named after a famous fortuneteller, Madame Lenormand, or Marie Anne Lenormand, who was known to read for Tsar Alexander I, Empress Josephine, and Robespierre.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("The Lenormand set we see today is supposedly based off of her own custom deck she used to read for those illustrious figures, but wasn't named after her until her death.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("When she passed away, she gave all her possessions to her nephew - who was a devout Christian. Sadly, he burned all of her writings, believing them to be heretical.")
-	message.author.sendEmbed(embed);
-	
+	message.author.send("Like Tarot, Lenormand started out as a parlor game called 'The Game of Hope', originating in the 1800's.\nl\nlThe cards are named after a famous fortuneteller, Madame Lenormand, or Marie Anne Lenormand, who was known to read for Tsar Alexander I, Empress Josephine, and Robespierre.\nl\nlThe Lenormand set we see today is supposedly based off of her own custom deck she used to read for those illustrious figures, but wasn't named after her until her death.\nl\nlWhen she passed away, she gave all her possessions to her nephew - who was a devout Christian. Sadly, he burned all of her writings, believing them to be heretical.");
 	var embed = new Discord.RichEmbed()
 		.setColor(0xFBA635)
 		.setTitle("**Single Cards VS Combinations**")
 	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("It's rare to read Lenormand cards alone, because the combinations are what give Lenormand readings their precision.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("It's here where you can start getting used to the concept of a grammar within the cards. As a rule of thumb, you can consider the first card of the pair the subject, and the second card the modifier.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("For example, we draw the pair 'Child' and 'Coffin'. The child is the subject, and the coffin is the modifier.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("As a subject, the child deals with innocence or inexperience.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("As a modifier, the coffin can mean something is buried or ended.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("Thus, the pair reading can indicate that one's innocence is coming to an end, or that one is growing up.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("Note that the combinations that we give you as examples can be interpreted in many ways, and are meant as examples for you to use as jumping off points for your own interpretations. Make these readings your own!")
-	message.author.sendEmbed(embed);
-	
+	message.author.send("It's rare to read Lenormand cards alone, because the combinations are what give Lenormand readings their precision.\nl\nlIt's here where you can start getting used to the concept of a grammar within the cards. As a rule of thumb, you can consider the first card of the pair the subject, and the second card the modifier.\nl\nlFor example, we draw the pair 'Child' and 'Coffin'. The child is the subject, and the coffin is the modifier.\nl\nlAs a subject, the child deals with innocence or inexperience.\nl\nlAs a modifier, the coffin can mean something is buried or ended.\nl\nlThus, the pair reading can indicate that one's innocence is coming to an end, or that one is growing up.\nl\nlNote that the combinations that we give you as examples can be interpreted in many ways, and are meant as examples for you to use as jumping off points for your own interpretations. Make these readings your own!");
 	var embed = new Discord.RichEmbed()
 		.setColor(0xFBA635)
 		.setTitle("**Spreads: Strings**")
 	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("Because Lenormand is very structural, you'll see that it doesn't have many spreads. One of the most common spreads though, are spreads that line up the cards in rows of 3, 5, or 7.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("You'll notice that these string spreads are all odd - meaning that there's a central card, which will give you the overall theme for the spread.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("Next, you can also read the cards pair by pair to tell a story. For a 3 card spread, you'll read the first and second card, and the second and third card together.")
-	message.author.sendEmbed(embed);
-	var embed = new Discord.RichEmbed()
-		.setColor(0xFBA635)
-		.setDescription("Finally, you can also do something called mirroring. For a 5 card spread, you'll read the first and fifth card as a pair, and the second and fourth as a pair.")
-	message.author.sendEmbed(embed);
+	message.author.send("Because Lenormand is very structural, you'll see that it doesn't have many spreads. One of the most common spreads though, are spreads that line up the cards in rows of 3, 5, or 7.\nl\nlYou'll notice that these string spreads are all odd - meaning that there's a central card, which will give you the overall theme for the spread.\nl\nlNext, you can also read the cards pair by pair to tell a story. For a 3 card spread, you'll read the first and second card, and the second and third card together.\nl\nlFinally, you can also do something called mirroring. For a 5 card spread, you'll read the first and fifth card as a pair, and the second and fourth as a pair.");
 	}
 });
 
