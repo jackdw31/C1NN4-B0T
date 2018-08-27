@@ -19,7 +19,7 @@ client.on("message", message => {
 		.addField("**c.storydice**", "9 random icons from the Lenormand set!"
 		.addField("**c.lenormand [x]**", "Various Lenormand commands. For a more indepth explanation, use c.lenormand help")
 		.setColor(0xFBA635)
-		.setFooter("- The Novelcraft Lounge -")
+		.setFooter("- The Novelcraft Lounge -");
 	message.channel.sendEmbed(embed);
 	}
 });
