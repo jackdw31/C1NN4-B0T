@@ -16,6 +16,7 @@ client.on("message", message => {
 		.addField("**c.help**", "Displays list of commands")
 		.addField("**c.ping**", "Pong!")
 		.addField("**c.bun**", "Reminds you of your cinnamon bun-ness!")
+		.addField("**c.storydice**", "9 random icons from the Lenormand set!"
 		.addField("**c.lenormand [x]**", "Various Lenormand commands. For a more indepth explanation, use c.lenormand help")
 		.setColor(0xFBA635)
 		.setFooter("- The Novelcraft Lounge -")
@@ -47,13 +48,10 @@ client.on("message", message => {
 		.setTitle("**Lenormand Commands**")
 		.addField("**c.lenormand help**", "Displays list of lenormand commands", true)
 		.addField("**c.lenormand howto**", "Private message with some explanations of how to read the cards, and some beginners tips - a bit spammy!", true)
-		.addBlankField()
 		.addField("**c.lenormand 2**", "Displays a pair of cards", true)
 		.addField("**c.lenormand 3**", "Displays a row of 3 cards", true)
-		.addBlankField()
 		.addField("**c.lenormand 5**", "Displays a row of 5 cards", true)
 		.addField("**c.lenormand 7**", "Displays a row of 7 cards", true)
-		.addBlankField()
 		.addField("**c.lenormand 9**", "Displays a grid of 9 cards, and private messages you instructions on how to read", true)
 		.addField("**c.lenormand tableau**", "Displays a grid of all 36 cards, and private messages you instructions on how to read - NOT YET IMPLEMENTED", true)
 		.setColor(0xFBA635)
@@ -87,6 +85,7 @@ client.on("message", message => {
 	}
 });
 
+var icon = [":horse_racing:",":four_leaf_clover:",":ship:",":house:",":evergreen_tree:",":cloud:",":snake:",":coffin:",":bouquet:","<:scythe:483534364014149644>","<:whip:483534413720977412>",":bird:",":baby::skin-tone-3:",":fox:",":bear:",":star:","<:stork:483534384511713290>",":dog:","<:tower:483534397677502465>","<:garden:483534364182052864>",":mountain_snow:","<:crossroads:483534364139847681>",":mouse:",":heart:",":ring:",":book:",":envelope:",":man::skin-tone-3:",":woman::skin-tone-3:",":cherry_blossom:",":sun_with_face:",":full_moon_with_face:",":key:",":fish:",":anchor:",":cross:"];
 var num = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35"];
 var deck = [":horse_racing:  I - The Rider",":four_leaf_clover:  II - The Clover",":ship:  III - The Ship",":house:  IV - The House",":evergreen_tree:  V - The Tree",":cloud:  VI - The Clouds",":snake:  VII - The Snake",":coffin:  VIII - The Coffin",":bouquet:  IX - The Bouquet","<:scythe:483534364014149644>  X - The Scythe","<:whip:483534413720977412>  XI - The Whip",":bird:  XII - The Birds",":baby::skin-tone-3:  XIII - The Child",":fox:  XIV - The Fox",":bear:  XV - The Bear",":star:  XVI - The Star","<:stork:483534384511713290>  XVII - The Stork",":dog:  XVIII - The Dog","<:tower:483534397677502465>  XIX - The Tower","<:garden:483534364182052864>  XX - The Garden",":mountain_snow:  XXI - The Mountain","<:crossroads:483534364139847681>  XXII - The Crossroad",":mouse:  XXIII - The Mice",":heart:  XXIV - The Heart",":ring:  XXV - The Ring",":book:  XXVI - The Book",":envelope:  XXVII - The Letter",":man::skin-tone-3:  XXVIII - The Man (Animus)",":woman::skin-tone-3:  XXIX - The Woman (Anima)",":cherry_blossom:  XXX - The Lily",":sun_with_face:  XXXI - The Sun",":full_moon_with_face:  XXXII - The Moon",":key:  XXXIII - The Key",":fish:  XXXIV - The Fish",":anchor:  XXXV - The Anchor",":cross:  XXXVI - The Cross"];
 var info = ["Energy, passion, speed, activity, news, messages","Luck, lightheartedness, small happinesses, opportunity, being untroubled, comedy","Departure, farewell, distance, voyage, travel, journey, adventure","Home, establishment, safety, tradition, custom, privacy, conservation","Growth, grounded, past connection, personal growth, spirituality, health","Confusion, unclarity, misunderstanding, insecurity, doubt, hidden secrets","Desire, seduction, deception, craving, attraction, sexuality, wisdom, forbidden knowledge","Ending, dying, funeral, loss, grief, mourning, sadness","Flattery, social life, pleasantness, cordiality, etiquette, politeness, appreciation","Accidents, hasty decisions, danger, a warning, speed, reckoning","Conflict, discussions, arguments, debate, scolding, opposition, objection","Worry, excitement, gossip, chattering, nervousness, anxiety","New beginnings, child, toddler, play, inexperience, innocence, immaturity","Selfishness, self care, trickery, suspicion, cunning, caution","Power, leadership, dominance, influence, short temper, strength of character, boss","Hope, inspiration, optimism, spirituality, dreams, progress to goals","Change, transition, movement, recurrence, new cycle, yearning","Loyalty, friendship, a follower, devotion, obedience, support","Authority, solitude, loneliness, isolation, aloofness, ego, arrogance","Public affairs, society, culture, teamwork, fame, social networks","Difficulties, problems, obstacles, impairment, hurdles, struggles, challenge","Choices, many opportunities, travel, separation, hesitation, decisions","Dwindling, deficiency, depletion, destruction, defect, flaw, disease","Love, amicability, romanticisation, forgiveness, reconciliation, softness, charity","Commitment, promise, honor, partnership, cooperation, cycles","Secrets, knowledge, education, information, research, studies","Document, email, speech, conversations, expression, information, communication","Male in querent’s life; if the querent is male - the querent; masculinity","Female in querent’s life; if the querent is female, the querent; femininity","Sensuality, sex, virtue, morality, ethics, wisdom, parents","Happiness, victory, success, power, warmth, truth","Subconscious, intuition, emotions, fears, desires, fantasy","Openness, revelation, unlocking, achievement, liberation, resolution","Finances, business, wealth, values, gain, abundance","Stability, restraint, security, resilience, durability, laying foundations","Duty, conviction, suffering, burden, intolerance, principles, indoctrination"];
@@ -101,6 +100,25 @@ function shuffle(array) {
 		array[randomIndex] = temporaryValue;
 	}
 };
+
+client.on("message", message => {
+	if (message.content === PREFIX + "storydice") {
+		shuffle(num);
+		let icon01 = icon[num[0]];
+		let icon02 = icon[num[1]];
+		let icon03 = icon[num[2]];
+		let icon04 = icon[num[3]];
+		let icon05 = icon[num[4]];
+		let icon06 = icon[num[5]];
+		let icon07 = icon[num[6]];
+		let icon08 = icon[num[7]];
+		let icon09 = icon[num[8]];
+		var embed = new Discord.RichEmbed()
+			.setDescription(icon01 + " // " + icon02 + " // " + icon03 + " // " + icon04 + " // " + icon05 + " // " + icon06 + " // " + icon07 + " // " + icon08 + " // " + icon09)
+			.setColor(0xFBA635)
+		message.channel.sendEmbed(embed);
+	}
+});
 
 client.on("message", message => {
 	if (message.content === PREFIX + "lenormand 2") {
@@ -295,11 +313,9 @@ client.on("message", message => {
 			.addField("Story", "Like any other string, you can read the cards in reading order from one to nine.", true)
 			.addField("Central Issue", "Card five - the central card - is indicative of the overall theme of the spread.", true)
 			.addField("Frame", "Cards one, three, seven, and nine - the corner cards - are indicative of the context of the situation.", true)
-			.addBlankField()
 			.addField("Past", "Cards one, four, and seven - the left column - are indicative of the past circumstances.", true)
 			.addField("Present", "Cards two, five, and eight - the middle column - are indicative of the present circumstances.", true)
 			.addField("Future", "Cards three, six, and nine - the right column - are indicative of the future circumstances.", true)
-			.addBlankField()
 			.addField("Conscious", "Cards one, two, and three - the top row - are indicative of the ideas and dreams that shape the situation.", true)
 			.addField("Reality", "Cards four, five, and six - the middle row - are indicative of the day to day circumstances.", true)
 			.addField("Unconscious", "Cards seven, eight, and nine - the bottom row - are indicative of the undercurrent shaping the situation.", true)
