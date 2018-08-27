@@ -85,7 +85,7 @@ client.on("message", message => {
 		let lz = Math.floor(Math.random()*36);
 		message.channel.sendMessage("$(lx) $(ly) $(lz)")
 	}
-};
+});
 
 // asdf //////////////////////////////////////
 
