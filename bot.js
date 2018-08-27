@@ -358,6 +358,18 @@ client.on("message", message => {
 			.setColor(0xFBA635)
 		message.channel.sendEmbed(embed);
 		var embed = new Discord.RichEmbed()
+			.addField(card01 - info01)
+			.addField(card02 - info02)
+			.addField(card03 - info03)
+			.addField(card04 - info04)
+			.addField(card05 - info05)
+			.addField(card06 - info06)
+			.addField(card07 - info07)
+			.addField(card08 - info08)
+			.addField(card09 - info09)
+			.setColor(0xFBA635)
+		message.channel.sendEmbed(embed);
+		var embed = new Discord.RichEmbed()
 			.setTitle("**Instructions**")
 			.addField("Story", "Like any other string, you can read the cards in reading order from one to nine.", true)
 			.addField("Central Issue", "Card five - the central card - is indicative of the overall theme of the spread.", true)
