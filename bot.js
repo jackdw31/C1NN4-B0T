@@ -53,10 +53,10 @@ client.on("message", message => {
 				}
 			}
 		}	
-		let card01 = lenormand[shuffler[0]];
-		let card02 = lenormand[shuffler[1]];
-		let card03 = lenormand[shuffler[2]];
-		message.channel.sendMessage(`${card01}/n${card02}/n${card03}`)
+		let card01 = shuffler[0];
+		let card02 = shuffler[1];
+		let card03 = shuffler[2];
+		message.channel.sendMessage(`${card01}/nl${card02}/nl${card03}`)
 	}
 });
 
