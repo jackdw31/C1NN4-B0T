@@ -83,7 +83,7 @@ client.on("message", message => {
 		let lx = Math.floor(Math.random()*36);
 		let ly = Math.floor(Math.random()*36);
 		let lz = Math.floor(Math.random()*36);
-		message.channel.sendMessage("${lx} ${ly} ${lz}")
+		message.channel.sendMessage(`${lx} ${ly} ${lz}`)
 	}
 });
 
