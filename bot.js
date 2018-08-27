@@ -56,7 +56,14 @@ client.on("message", message => {
 		let card01 = shuffler[0];
 		let card02 = shuffler[1];
 		let card03 = shuffler[2];
-		message.channel.sendMessage(`${card01}/nl${card02}/nl${card03}`)
+		var embed = new Discord.RichEmbed()
+		.setTitle("**Reading**")
+			.addField(card01)
+			.addField(card02)
+			.addField(card03)
+			.setColor(0xFBA635)
+			.setFooter("- The Novelcraft Lounge -")
+		message.channel.sendEmbed(embed);
 	}
 });
 
