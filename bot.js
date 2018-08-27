@@ -44,18 +44,19 @@ var lenormand = [":horse_racing: I - Rider",":four_leaf_clover: II - Clover",":s
 
 client.on("message", message => {
 	if (message.content === PREFIX + "lenormand") {
-	var shuffler = new Array(36); 
-	for (var i = 0; i < shuffler.length; i++) {
-	function shuffle(shuffler) {
-		for (let i = shuffler.length - 1; i > 0; i--) {
-			const j = Math.floor(Math.random() * (i + 1));
-			[shuffler[i], shuffler[j]] = [shuffler[j], shuffler[i]];
-		}
-	}	
-	let card01 = lenormand[shuffler[0]];
-	let card02 = lenormand[shuffler[1]];
-	let card03 = lenormand[shuffler[2]];
-	message.channel.sendMessage(`${card01}/n${card02}/n${card03}`)
+		var shuffler = new Array(36); 
+		for (var i = 0; i < shuffler.length; i++) {
+			function shuffle(shuffler) {
+				for (let i = shuffler.length - 1; i > 0; i--) {
+					const j = Math.floor(Math.random() * (i + 1));
+					[shuffler[i], shuffler[j]] = [shuffler[j], shuffler[i]];
+				}
+			}
+		}	
+		let card01 = lenormand[shuffler[0]];
+		let card02 = lenormand[shuffler[1]];
+		let card03 = lenormand[shuffler[2]];
+		message.channel.sendMessage(`${card01}/n${card02}/n${card03}`)
 	}
 });
 
