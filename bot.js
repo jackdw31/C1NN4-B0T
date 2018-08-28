@@ -40,7 +40,7 @@ client.on("message", message => {
   	}
 });
 
-// lenormand /////////////////////////////////
+// lenormand / storydice /////////////////////
 
 client.on("message", message => {
 	if (message.content === PREFIX + "lenormand help") {
@@ -319,6 +319,90 @@ client.on("message", message => {
 			.addField("Conscious", "Cards one, two, and three - the top row - are indicative of the ideas and dreams that shape the situation.", true)
 			.addField("Reality", "Cards four, five, and six - the middle row - are indicative of the day to day circumstances.", true)
 			.addField("Unconscious", "Cards seven, eight, and nine - the bottom row - are indicative of the undercurrent shaping the situation.", true)
+			.setColor(0xFBA635)
+		message.author.sendEmbed(embed);
+	}
+});
+
+client.on("message", message => {
+	if (message.content === PREFIX + "lenormand tableau") {
+		shuffle(num);
+		let card01 = deck[num[0]]; let card02 = deck[num[1]]; let card03 = deck[num[2]]; let card04 = deck[num[3]]; let card05 = deck[num[4]]; let card06 = deck[num[5]]; let card07 = deck[num[6]]; let card08 = deck[num[7]]; let card09 = deck[num[8]]; let card10 = deck[num[9]]; let card11 = deck[num[10]]; let card12 = deck[num[11]]; let card13 = deck[num[12]]; let card14 = deck[num[13]]; let card15 = deck[num[14]]; let card16 = deck[num[15]]; let card17 = deck[num[16]]; let card18 = deck[num[17]]; let card19 = deck[num[18]]; let card20 = deck[num[19]]; let card21 = deck[num[20]]; let card22 = deck[num[21]]; let card23 = deck[num[22]]; let card24 = deck[num[23]]; let card25 = deck[num[24]]; let card26 = deck[num[25]]; let card27 = deck[num[26]]; let card28 = deck[num[27]]; let card29 = deck[num[28]]; let card30 = deck[num[29]]; let card31 = deck[num[30]]; let card32 = deck[num[31]]; let card33 = deck[num[32]]; let card34 = deck[num[33]]; let card35 = deck[num[34]]; let card36 = deck[num[35]];
+		let info01 = info[num[0]]; let info02 = info[num[1]]; let info03 = info[num[2]]; let info04 = info[num[3]]; let info05 = info[num[4]]; let info06 = info[num[5]]; let info07 = info[num[6]]; let info08 = info[num[7]]; let info09 = info[num[8]]; let info10 = info[num[9]]; let info11 = info[num[10]]; let info12 = info[num[11]]; let info13 = info[num[12]]; let info14 = info[num[13]]; let info15 = info[num[14]]; let info16 = info[num[15]]; let info17 = info[num[16]]; let info18 = info[num[17]]; let info19 = info[num[18]]; let info20 = info[num[19]]; let info21 = info[num[20]]; let info22 = info[num[21]]; let info23 = info[num[22]]; let info24 = info[num[23]]; let info25 = info[num[24]]; let info26 = info[num[25]]; let info27 = info[num[26]]; let info28 = info[num[27]]; let info29 = info[num[28]]; let info30 = info[num[29]]; let info31 = info[num[30]]; let info32 = info[num[31]]; let info33 = info[num[32]]; let info34 = info[num[33]]; let info35 = info[num[34]]; let info36 = info[num[35]];
+		let icon01 = icon[num[0]]; let icon02 = icon[num[1]]; let icon03 = icon[num[2]]; let icon04 = icon[num[3]]; let icon05 = icon[num[4]]; let icon06 = icon[num[5]]; let icon07 = icon[num[6]]; let icon08 = icon[num[7]]; let icon09 = icon[num[8]]; let icon10 = icon[num[9]]; let icon11 = icon[num[10]]; let icon12 = icon[num[11]]; let icon13 = icon[num[12]]; let icon14 = icon[num[13]]; let icon15 = icon[num[14]]; let icon16 = icon[num[15]]; let icon17 = icon[num[16]]; let icon18 = icon[num[17]]; let icon19 = icon[num[18]]; let icon20 = icon[num[19]]; let icon21 = icon[num[20]]; let icon22 = icon[num[21]]; let icon23 = icon[num[22]]; let icon24 = icon[num[23]]; let icon25 = icon[num[24]]; let icon26 = icon[num[25]]; let icon27 = icon[num[26]]; let icon28 = icon[num[27]]; let icon29 = icon[num[28]]; let icon30 = icon[num[29]]; let icon31 = icon[num[30]]; let icon32 = icon[num[31]]; let icon33 = icon[num[32]]; let icon34 = icon[num[33]]; let icon35 = icon[num[34]]; let icon36 = icon[num[35]]; 
+		var embed = new Discord.RichEmbed()
+			.setDescription(icon01 + " " + icon02 + " " + icon03 + " " + icon04 + " " + icon05 + " " + icon06 + " " + icon07 + " " + icon08)
+			.setColor(0xFBA635)
+		message.channel.sendEmbed(embed);
+		var embed = new Discord.RichEmbed()
+			.setDescription(icon09 + " " + icon10 + " " + icon11 + " " + icon12 + " " + icon13 + " " + icon14 + " " + icon15 + " " + icon16)
+			.setColor(0xFBA635)
+		message.channel.sendEmbed(embed);
+		var embed = new Discord.RichEmbed()
+			.setDescription(icon17 + " " + icon18 + " " + icon19 + " " + icon20 + " " + icon21 + " " + icon22 + " " + icon23 + " " + icon24)
+			.setColor(0xFBA635)
+		message.channel.sendEmbed(embed);
+		var embed = new Discord.RichEmbed()
+			.setDescription(icon25 + " " + icon26 + " " + icon27 + " " + icon28 + " " + icon29 + " " + icon30 + " " + icon31 + " " + icon32)
+			.setColor(0xFBA635)
+		message.channel.sendEmbed(embed);
+		var embed = new Discord.RichEmbed()
+			.setDescription(" " + icon21 + " " + icon22 + " " + icon23 + " " + icon24 + " ")
+			.setColor(0xFBA635)
+		message.channel.sendEmbed(embed);
+		var embed = new Discord.RichEmbed()
+			.addField(card01, info01)
+			.addField(card02, info02)
+			.addField(card03, info03)
+			.addField(card04, info04)
+			.addField(card05, info05)
+			.addField(card06, info06)
+			.addField(card07, info07)
+			.addField(card08, info08)
+			.addBlankField
+			.addField(card09, info09)
+			.addField(card10, info10)
+			.addField(card11, info11)
+			.addField(card12, info12)
+			.addField(card13, info13)
+			.addField(card14, info14)
+			.addField(card15, info15)
+			.addField(card16, info16)
+			.addBlankField
+			.addField(card17, info17)
+			.addField(card18, info18)
+			.addField(card19, info19)
+			.addField(card20, info20)
+			.addField(card21, info21)
+			.addField(card22, info22)
+			.addField(card23, info23)
+			.addField(card24, info24)
+			.addBlankField	
+			.addField(card25, info25)
+			.addField(card26, info26)
+			.addField(card27, info27)
+			.addField(card28, info28)
+			.addField(card29, info29)
+			.addField(card30, info30)
+			.addField(card31, info31)
+			.addField(card32, info32)
+			.addBlankField
+			.addField(card33, info33)
+			.addField(card34, info34)
+			.addField(card35, info35)
+			.addField(card36, info36)
+			.setColor(0xFBA635)
+		message.author.sendEmbed(embed);
+		var embed = new Discord.RichEmbed()
+			.setTitle("**Instructions**")
+			.addField("Story", "Like any other string, you can read the cards in reading order from one to thirtysix.", true)
+			.addField("Significator", "Traditionally, it is the Animus or Anima card, depending on your gender. But this can also be the card that best represents your situation.", true)
+			.addField("Central Issue", "Cards twelve, thirteen, twenty, and twentyone - the central cards - are indicative of the overall theme of the spread.", true)
+			.addField("Frame", "Cards one, eight, twentyfive, and thirtytwo - the corner cards - are indicative of the context of the situation.", true)
+			.addField("Past", "All cards in the same row and to the left of your significator are indicative of the past circumstances.", true)
+			.addField("Future", "All cards in the same row and to the right of your significator are indicative of the future circumstances.", true)
+			.addField("Conscious", "All cards in the same column and above your significator are indicative of the ideas and dreams that shape the situation.", true)
+			.addField("Unconscious", "All cards in the same column and beneath your significator are indicative of the undercurrent shaping the situation.", true)
 			.setColor(0xFBA635)
 		message.author.sendEmbed(embed);
 	}
