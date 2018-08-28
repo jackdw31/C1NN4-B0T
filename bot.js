@@ -300,9 +300,11 @@ client.on("message", message => {
 			.addField(card01, info01)
 			.addField(card02, info02)
 			.addField(card03, info03)
+			.addBlankField()
 			.addField(card04, info04)
 			.addField(card05, info05)
 			.addField(card06, info06)
+			.addBlankField()
 			.addField(card07, info07)
 			.addField(card08, info08)
 			.addField(card09, info09)
@@ -359,7 +361,7 @@ client.on("message", message => {
 			.addField(card06, info06)
 			.addField(card07, info07)
 			.addField(card08, info08)
-			.addBlankField
+			.addBlankField()
 			.addField(card09, info09)
 			.addField(card10, info10)
 			.addField(card11, info11)
@@ -368,7 +370,7 @@ client.on("message", message => {
 			.addField(card14, info14)
 			.addField(card15, info15)
 			.addField(card16, info16)
-			.addBlankField
+			.addBlankField()
 			.addField(card17, info17)
 			.addField(card18, info18)
 			.addField(card19, info19)
@@ -377,7 +379,7 @@ client.on("message", message => {
 			.addField(card22, info22)
 			.addField(card23, info23)
 			.addField(card24, info24)
-			.addBlankField	
+			.addBlankField()
 			.addField(card25, info25)
 			.addField(card26, info26)
 			.addField(card27, info27)
@@ -386,7 +388,7 @@ client.on("message", message => {
 			.addField(card30, info30)
 			.addField(card31, info31)
 			.addField(card32, info32)
-			.addBlankField
+			.addBlankField()
 			.addField(card33, info33)
 			.addField(card34, info34)
 			.addField(card35, info35)
