@@ -53,7 +53,7 @@ client.on("message", message => {
 		.addField("**c.lenormand 5**", "Displays a row of 5 cards", true)
 		.addField("**c.lenormand 7**", "Displays a row of 7 cards", true)
 		.addField("**c.lenormand 9**", "Displays a grid of 9 cards, and private messages you instructions on how to read", true)
-		.addField("**c.lenormand tableau**", "Displays a grid of all 36 cards, and private messages you instructions on how to read - NOT YET IMPLEMENTED", true)
+		.addField("**c.lenormand tableau**", "Displays a grid of all 36 cards, and private messages you instructions on how to read", true)
 		.setColor(0xFBA635)
 		.setFooter("- The Novelcraft Lounge -")
 	message.channel.sendEmbed(embed);
