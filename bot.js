@@ -349,7 +349,7 @@ client.on("message", message => {
 			.setColor(0xFBA635)
 		message.channel.sendEmbed(embed);
 		var embed = new Discord.RichEmbed()
-			.setDescription("              " + icon21 + " " + icon22 + " " + icon23 + " " + icon24)
+			.setDescription("<:EmbedSpacer:483826818546139173> <:EmbedSpacer:483826818546139173> " + icon21 + " " + icon22 + " " + icon23 + " " + icon24)
 			.setColor(0xFBA635)
 		message.channel.sendEmbed(embed);
 		var embed = new Discord.RichEmbed()
