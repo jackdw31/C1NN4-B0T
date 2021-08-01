@@ -1,6 +1,6 @@
 {
   "name": "C1NN4-B0T",
-  "description": "The Novelcraft Lounge's very own bot!",
+  "description": "The Storycraft Lounge's very own bot!",
   "version": "0.0.0",
   "main": "bot.js",
   "scripts": {
