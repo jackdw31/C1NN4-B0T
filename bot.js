@@ -349,7 +349,7 @@ client.on("message", message => {
 			.setColor(0xFBA635)
 		message.channel.sendEmbed(embed);
 		var embed = new Discord.RichEmbed()
-			.setDescription("<:EmbedSpacer:483826818546139173> <:EmbedSpacer:483826818546139173> " + icon21 + " " + icon22 + " " + icon23 + " " + icon24 + " <:EmbedSpacer:483826818546139173> <:EmbedSpacer:483826818546139173>")
+			.setDescription("<:EmbedSpacer:483826818546139173> <:EmbedSpacer:483826818546139173> " + icon33 + " " + icon34 + " " + icon35 + " " + icon36 + " <:EmbedSpacer:483826818546139173> <:EmbedSpacer:483826818546139173>")
 			.setColor(0xFBA635)
 		message.channel.sendEmbed(embed);
 		var embed = new Discord.RichEmbed()
@@ -415,14 +415,6 @@ client.on("message", message => {
 			.addField("Unconscious", "All cards in the same column and beneath your significator are indicative of the undercurrent shaping the situation.", true)
 			.setColor(0xFBA635)
 		message.author.sendEmbed(embed);
-	}
-});
-
-// asdf //////////////////////////////////////
-
-client.on("message", message => {
-	if (message.content === PREFIX + "asdf") {
-	message.channel.send("Hello cinnamon buns! <:CinnamonBun:473972103025131540>\nFor NaNoWriMo this year, we’re taking you on a quest! There will be monsters to slay, gold to earn, but most importantly, novels to write!\n\nAny good quest needs adventurers! Below, you can react to an emoji to choose your class! The classes available:\n\n:dizzy: **Mage!** Cast spells! Invoke the elements!\n:shield: **Warrior!** Shield allies! Decimate your foes!\n:knife: **Rogue!** Trickery! Deceit! Stick to the shadows!\n:guitar: **Bard!** Boost allies’ spirits! Play legendary solos!\n\nBy levelling up in the Discord, and by helping to slay the daily boss, you can receive new class titles, showing your prowess and mastery over words!\n\nEach day a new boss fight will unlock at **12PM GMT**, with a word count required to beat it. For the next 24 hours, you can write as much as you wish, and can submit the number of words you completed that day - even if you didn’t meet the day’s goal. At the end of the month, everyone’s progress will be tallied up and ranked!\n\nWho will lead the raid? And who will conquer their novel? You decide! Happy writing cinnamon bun! <:CinnamonBun:473972103025131540>");
 	}
 });
 			     
