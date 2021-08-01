@@ -19,7 +19,7 @@ client.on("message", message => {
 		.addField("**c.storydice**", "9 random icons from the Lenormand set!")
 		.addField("**c.lenormand [x]**", "Various Lenormand commands. For a more indepth explanation, use c.lenormand help")
 		.setColor(0xFBA635)
-		.setFooter("- The Novelcraft Lounge -")
+		.setFooter("- The Storycraft Lounge -")
 	message.channel.sendEmbed(embed);
 	}
 });
@@ -55,7 +55,7 @@ client.on("message", message => {
 		.addField("**c.lenormand 9**", "Displays a grid of 9 cards, and private messages you instructions on how to read", true)
 		.addField("**c.lenormand tableau**", "Displays a grid of all 36 cards, and private messages you instructions on how to read", true)
 		.setColor(0xFBA635)
-		.setFooter("- The Novelcraft Lounge -")
+		.setFooter("- The Storycraft Lounge -")
 	message.channel.sendEmbed(embed);
 	}
 });
