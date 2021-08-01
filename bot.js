@@ -12,7 +12,7 @@ client.on("ready", () => {
 client.on("message", message => {
 	if (message.content === PREFIX + "help") {
 	var embed = new Discord.RichEmbed()
-		.setTitle("**What can C1NN4-B0T do?**")
+		.setTitle("**What can c1nn4-b0t do?**")
 		.addField("**c.help**", "Displays list of commands")
 		.addField("**c.ping**", "Pong!")
 		.addField("**c.bun**", "Reminds you of your cinnamon bun-ness!")
